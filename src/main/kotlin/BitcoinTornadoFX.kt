@@ -3,7 +3,7 @@
 /**
  * Hello. Welcome to bitcoin price application
  * This application get the bitcoin prices with 2 currencies
- * The Histories of the preises are update every minute with coroutine.
+ * The Histories of the prices are update every minute with coroutine.
  * Mac Müller
  */
 

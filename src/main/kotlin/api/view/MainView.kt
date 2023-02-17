@@ -16,7 +16,7 @@ class MainView : View("BitcoinApp::mullk8") {
 
     /**
      * First Tab: shows the current bitcoin price
-     * User can select which price to show
+     * User can select which currency to be showed
      */
     override val root = tabpane {
             tabClosingPolicy = TabPane.TabClosingPolicy.UNAVAILABLE

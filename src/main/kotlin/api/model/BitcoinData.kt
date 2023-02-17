@@ -7,7 +7,7 @@ import java.net.URL
 
 /**
  * Model Class: get the data via API
- * The data will be parsing with jacksonObjectMapper to Bitcoin.kt
+ * The data will be parsed with jacksonObjectMapper to Bitcoin.kt
  */
 class BitcoinData {
     private val url = "https://api.coindesk.com/v1/bpi/currentprice.json"
@@ -38,7 +38,7 @@ class BitcoinData {
             }
         }
     }
-    /** Suspend Function for corountine */
+    /** Suspend Function for coroutine */
     private suspend fun fetchResponse() = coroutineScope {
         try {
             async { getBitcoinData() }.await()

@@ -25,7 +25,7 @@ class MyController: Controller() {
     var datas = mutableListOf<Bitcoin>().asObservable()
 
     /**
-     * Scheduling call to update the preises every minute
+     * Scheduling call to update the prices every minute
      */
     init {
         val exc = Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate({
@@ -39,8 +39,8 @@ class MyController: Controller() {
     }
 
     /**
-     * User can should which of 3 currencies to show at front
-     * For the histories. It wills show all 3 currencies as the same times in the list
+     * User can select one of three currencies to show.
+     * For the histories. All 3 currencies will be showed as the same times in the list
      */
     public fun setControlCurrency(): Unit {
         var info = data.bpi.usd
